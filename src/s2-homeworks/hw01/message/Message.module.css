@@ -8,7 +8,8 @@ width: 300px;
 }
 
 .imageAndText img {
-
+width: 200px;
+height: 100px;
 }
 
 .text {
@@ -29,7 +30,4 @@ width: 300px;
 
 .time {
 
-}
-#hw1-avatar{
-    width: 200px;
 }
