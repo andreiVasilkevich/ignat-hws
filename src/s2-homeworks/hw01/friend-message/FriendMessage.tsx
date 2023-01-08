@@ -6,41 +6,40 @@ import {MessagePropsType} from "../message/Message";
 const FriendMessage = (props: MessagePropsType) => {
     return (
         <div
-            id={'hw1-friend-message-' + props.messages.id}
+            id={'hw1-friend-message-' + props.message.id}
             className={s.friendMessage}
         >
             <div className={s.friendImageAndText}>
-                <img src= {props.messages.user.avatar}
-                    id={'hw1-friend-avatar-' + props.messages.id}
+                <img src= {props.message.user.avatar}
+                    id={'hw1-friend-avatar-' + props.message.id}
                     // создаёт студент
 
                     //
                 />
                 <div className={s.friendText}>
                     <div
-                        id={'hw1-friend-name-' + props.messages.id}
+                        id={'hw1-friend-name-' + props.message.id}
                         className={s.friendName}
                     >
-                        {/*создаёт студент*/}
-                        {props.messages.user.name}
+                        {props.message.user.name}
                         {/**/}
                     </div>
                     <pre
-                        id={'hw1-friend-text-' + props.messages.id}
+                        id={'hw1-friend-text-' + props.message.id}
                         className={s.friendMessageText}
                     >
-                        {/*создаёт студент*/}
-                        {props.messages.message.text}
+
+                        {props.message.message.text}
                         {/**/}
                     </pre>
                 </div>
             </div>
             <div
-                id={'hw1-friend-time-' + props.messages.message.time}
+                id={'hw1-friend-time-' + props.message.message.time}
                 className={s.friendTime}
             >
-                {/*создаёт студент*/}
-                {props.messages.message.time}
+
+                {props.message.message.time}
                 {/**/}
             </div>
         </div>

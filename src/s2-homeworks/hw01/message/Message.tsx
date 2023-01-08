@@ -4,37 +4,29 @@ import {MessageType} from "../HW1";
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
-    messages: MessageType
+    message: MessageType
 }
 
 // нужно отобразить приходящие данные
 const Message = (props:  MessagePropsType) => {
     return (
-        <div id={'hw1-message-' + props.messages.id} className={s.message}>
+        <div id={'hw1-message-' + props.message.id} className={s.message}>
             <div className={s.imageAndText}>
-                <img src = {props.messages.user.avatar}
-                    id={'hw1-avatar-' + props.messages.id}
-                    // создаёт студент
+                <img src = {props.message.user.avatar} alt = {'ava'}
+                    id={'hw1-avatar-' + props.message.id}
 
-                    //
                 />
                 <div className={s.text}>
-                    <div id={'hw1-name-' + props.messages.id} className={s.name}>
-                        {/*создаёт студент*/ }
-                        {props.messages.user.name}
-                        {/**/}
+                    <div id={'hw1-name-' + props.message.id} className={s.name}>
+                        {props.message.user.name}
                     </div>
-                    <pre id={'hw1-text-' + props.messages.id} className={s.messageText}>
-                        {/*создаёт студент*/}
-                        {props.messages.message.text}
-                        {/**/}
+                    <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
+                        {props.message.message.text}
                     </pre>
                 </div>
             </div>
-            <div id={'hw1-time-' + props.messages.id} className={s.time}>
-                {/*создаёт студент*/}
-                {props.messages.message.time}
-                {/**/}
+            <div id={'hw1-time-' + props.message.id} className={s.time}>
+                {props.message.message.time}
             </div>
         </div>
     )
