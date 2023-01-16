@@ -25,10 +25,10 @@ function Affairs(props: AffairsPropsType) {
         props.setFilter('low')
     }
 
-    const cnAll = s.button + 'All ' + s.all + (props.filter === 'all' ? 'All ' + s.active : 'All')
+    const cnAll = s.button + 'all ' + s.all + (props.filter === 'all' ? 'All ' + s.active : 'hw2-button-all')
     const cnHigh = s.button + 'high ' + s.high + (props.filter === 'high' ? 'High ' + s.active : 'hw2-button-high')
-    const cnMiddle = s.button + 'Middle ' + s.middle + (props.filter === 'middle' ? 'Middle ' + s.active : 'Middle')
-    const cnLow = s.button + 'Low ' + s.low + (props.filter === 'low' ? 'Low ' + s.active : 'Low')
+    const cnMiddle = s.button + 'middle ' + s.middle + (props.filter === 'middle' ? 'Middle ' + s.active : 'Middle')
+    const cnLow = s.button + 'low ' + s.low + (props.filter === 'low' ? 'Low ' + s.active : 'Low')
 
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair
