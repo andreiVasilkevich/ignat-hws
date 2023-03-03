@@ -24,6 +24,9 @@ const HW7 = () => {
     return (
         <div id={'hw7'}>
             <p>HELLO WORLD!!!</p>
+            <p>HELLO WORLD!!!</p>
+            <p>HELLO WORLD!!!</p>
+
             <div className={s2.hwTitle}>Homework #7</div>
 
             {/*демонстрация возможностей компонент:*/}
